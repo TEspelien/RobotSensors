@@ -11,7 +11,7 @@ public class Robot {
         this.globalHeading = heading;
     }
 
-    public void updatePosition(){
+    public void updatePosition(double odoRight, double odoLeft){
 
     }
 }
