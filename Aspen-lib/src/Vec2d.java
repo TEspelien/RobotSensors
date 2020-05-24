@@ -11,6 +11,7 @@ public class Vec2d {
         this.y = y;
         this.length = Math.sqrt(x*x+y*y);
         this.angle = Math.atan2(y,x);
+        // https://docs.oracle.com/javase/7/docs/api/java/lang/Math.html#atan2(double,%20double)
     }
 
     Vec2d polar(double l, double a) {

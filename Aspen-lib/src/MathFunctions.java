@@ -10,6 +10,7 @@ public class MathFunctions {
 
 
     public double dot(Vec2d v1, Vec2d v2) {
+        //be wary that if the vectors are perpendicular this could be very close but not equal to 0 due to rounding
         return v1.x * v2.x + v1.y * v2.y;
     }
 
@@ -65,7 +66,8 @@ public class MathFunctions {
 
 
     public double angle(Vec2d v1, Vec2d v2) {
-        return dot(v1, v2) / (mag(v1) * mag(v2));
+        return Math.abs(v1.angle - v2.angle);
+        // return dot(v1, v2) / (mag(v1) * mag(v2));
     }
 
     public double angle(Vec3d v1, Vec3d v2) {
